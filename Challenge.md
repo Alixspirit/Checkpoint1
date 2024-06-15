@@ -1,5 +1,3 @@
-
-
 # Exercice 2 - Script de creation d'utilisateurs en bash
 
 Nom : addUsers.sh
