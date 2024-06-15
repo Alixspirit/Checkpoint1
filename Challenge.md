@@ -1,3 +1,42 @@
+# Exercice 1
+
+# Historique des commandes
+
+fdisk -l  
+cfdisk /dev/sdb  
+dos  
+nouvelle  
+6G  
+primaire 
+ecrire oui  
+quitter
+fdisk /dev/sdb
+n  
+p  
+2  
+entrée
+entrée
+t  
+2  
+82  
+w  
+mkswap /dev/sdb2
+swapon /dev/sdb2
+fdisk -l
+mkfs.ext4 -L DATA /dev/sdb1  
+mkdir mnt  
+cd mnt  
+mkdir data  
+cd ..  
+mount -t ext4 /dev/sdb1 /mnt/data  
+df -h  
+nano /etc/fstab  
+UUID=423d6604-7c92-479e-894e-588b94a168ce /mnt/data ext4 defaults 0 2  
+ctrl + x    
+o  
+entrée  
+mount -a  
+
 # Exercice 2 - Script de creation d'utilisateurs en bash
 
 Nom : addUsers.sh
